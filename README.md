@@ -94,7 +94,7 @@ function startBot () {
 
   const authFlow = new Authflow(
     "bedrock-bot", // local identifier string
-    undenified,
+    undefied,
     {
       flow: "msal",
       authTitle: Titles.MinecraftNintendoSwitch
