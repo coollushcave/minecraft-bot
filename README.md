@@ -40,7 +40,7 @@ function startBot() {
     port: CONFIG.port,
     username: CONFIG.username,
     auth: CONFIG.auth,
-    version: "1.21.x" minecraft version
+    version: "1.21.x" // minecraft version
   });
 
   bot.on("login", () => {
@@ -85,6 +85,7 @@ const { Authflow, Titles } = require('prismarine-auth')
 const CONFIG = {
   host: "example.server.ip",
   port: 19132,
+  username: "email", // Your minecraft email
   afkIntervalMs: 15000 // config
 }
 
@@ -106,6 +107,7 @@ function startBot () {
   const client = createClient({
     host: CONFIG.host,
     port: CONFIG.port,
+    username: CONFIG.username,
     authFlow
   })
 
