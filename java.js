@@ -20,11 +20,11 @@ function startBot() {
   });
 
   bot.on("login", () => {
-    console.log("Logged in to server!");
+    console.log("[INFO] Logged in to server!");
   });
 
   bot.on("end", () => {
-    console.log("Disconnected! Reconnecting in 5 seconds.");
+    console.log("[INFO] Disconnected! Reconnecting in 5 seconds.");
     setTimeout(startBot, 5000); // timer
   });
 
